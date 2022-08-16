@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SEE U SOON-ABOUT</title>
+    <!--css연결-->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!--Banger font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bangers&family=Koulen&family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+    <!--noto sans-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bangers&family=Koulen&family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+    <!--tab메뉴 넣기-->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+
+            $('.tab .tabs a').on('click', function () { // 탭메뉴에 있는 링크를 클릭했을때
+                var idx = $(this).parent().index(); // 현재 클릭한 링크의 부모가 몇번째 인지 idx 변수에 넣는다.
+
+                $(this).parent().siblings().removeClass('on'); // 현재 클릭한 링크의 부모를 제외 한 나머지 li에 on클래스를 제거하고
+                $(this).parent().addClass('on'); // 현재 클릭한 링크의 부모 li에 on클래스 넣는다.
+
+                $(this).parent().parent().siblings('.tab_con').removeClass('on');
+                // 현재 클릭한 부모 li의 부모 ul을 제외한 나머지 클래스 .tab_con에 클래스 on을 지워준다.
+
+                $(this).parent().parent().siblings('.tab_con').eq(idx).addClass('on');
+                // 현재 클릭한 부모 li의 부모 ul을 제외한 나머지 클래스 .tab_con을 선택하고 그중 eq번째에 클래스 on을 넣는다.
+
+            });
+
+        });
+    </script>
+
+</head>
+<body>
+    <!--nav-->
+    <div id="nav">
+        <div class="nav_inner">
+            <a href="../main/index.html" class="logo"> <img src="images/top_logo.png" alt="nav로고"></a>
+            <ul>
+                <li><a href="#none">ABOUT</a></li>
+                <li><a href="#none">MENU</a></li>
+                <li><a href="#none">CONTENTS</a></li>
+                <li><a href="#none">STORE</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!--banner-->
+    <div class="banner">
+        <img class="main" src="images/banner.jpg" alt="메인배너">
+        <div class="banner_hover">
+            <p class="p1">
+                By changing nothing, <br>
+                Nothing changes
+            </p>
+            <p class="p2">
+                커피 한 잔을 조금 더 가치있게,<br>
+                우리의 소비를 조금 더 배려있게<br>
+                자연과 함께 더불어가는 공간을 함께 만들어가는.<br>
+            </p>
+            <p class="p3">
+                또 오고싶고, 다시 또 사용하는 <br>
+                힐링 카페공간
+            </p>
+        </div>
+    </div>
+
+
+    <!--logo story-->
+    <div id="logo_story">
+        <img src="images/logo_story.jpg" alt="로고설명">
+    </div>
+
+
+    <!--core ideologies-->
+    <div id="core">
+        <h1>core ideologies</h1>
+        <ul>
+            <li>
+                <img src="images/core1.png" alt="친환경로고">
+                <h3>친환경</h3>
+                <h5>
+                    플라스틱 사용을 지양합니다. <br>
+                    가속화되는 사막화현상을<br>
+                    그저 방관하는 것이 아닌, <br>
+                    나무 한 그루를 심으며 실천하는<br>
+                    환경보호 단체로 비상하는 <br>
+                    발걸음에 함께 동참해주세요!
+                </h5>
+            </li>
+            <li>
+                <img src="images/core2.png" alt="연구심로고">
+                <h3>연구심</h3>
+                <h5>
+                    늘 고민하고 연구합니다.<br>
+                    그저 수동적인 행함이 아닌,<br>
+                    능동적으로 고객과 품질, 환경문제에<br>
+                    다가가기 위한 See U Soon의<br>
+                    진실된  연구심은<br>
+                    무한한 발전가능성을 보입니다.   
+                </h5>
+            </li>
+            <li>
+                <img src="images/core3.png" alt="우수함로고">
+                <h3>우수함</h3>
+                <h5>
+                    커피 한모금에서 풍미를 느끼다.<br>
+                    See U Soon의 엄격한 품질기준을 <br>
+                    통과한 원두만을 취급합니다.<br>
+                    이러한 정성들이 모여서, <br>
+                    조금 더 깊고 진한 맛의 차별화를<br>
+                    맛볼 수 있는 기회를 놓치지마세요!  
+                </h5>
+            </li>
+            <li>
+                <img src="images/core4.png" alt="관계성로고">
+                <h3>관계성</h3>
+                <h5>
+                    고객과 직원의 관계를 중요시 여깁니다. <br>
+                    감사한 고객과 소중한 직원이 <br>
+                    함께 즐길 수 있는 공간과 <br>
+                    서로를 배려할 수 있는 관계의 성립을 위해 <br>
+                    늘 소통할 수 있는 시스템과 <br>
+                    확실한 커리큘럼과 함께합니다.    
+                </h5>
+            </li>
+        </ul>
+    </div>
+
+
+    <!--tab메뉴 꾸미기-->
+    <div id="fc">
+        <p>font & color</p>
+        <div class="tab">
+            <ul class="tabs type1">
+            <li class="tab1"><a href="#a">#font</a></li>
+            <li class="tab2"><a href="#a">#576e45</a></li>
+            <li class="tab3"><a href="#a">#222a1b</a></li>
+            <li class="tab4"><a href="#a">#e53412</a></li>
+            </ul>	
+            <div class="tab_con on">
+                <img src="images/font.png" alt="폰트설명"> 
+            </div>
+            <div class="tab_con">
+                <img src="images/color1.png" alt="color1설명">
+            </div>
+            <div class="tab_con">
+                <img src="images/color2.png" alt="color2내용">
+            </div>
+            <div class="tab_con">
+                <img src="images/color3.png" alt="color3내용">
+            </div>
+        </div>
+    </div>
+
+    <!--Responsibility-->
+    <div id="responsibility">
+        <p>responsibility</p>
+        <div class="photo left overflow">
+            <img src="images/desert.png" alt="사막사진">
+        </div>
+        <div class="text0 right text1">
+            <h1>사막화, 그리고 우리</h1>
+            <h5>
+                세계식량기구 ITPS에 의하면 황사, 미세먼지는 우리가 사막화의 영향권에 <br>
+                있음을 말합니다. 사막화는 자연적인 현상이나, 지금의 사막화 속도는<br>
+                자연적 속도의 100배에서 많게는 1000배에 달합니다.<br>
+                평균적으로 5초에 축구장 하나 크기의 토양이 사라지고 있습니다. <br>
+                더 이상 방관할 수 없음에, SEE  U SOON카페는 책임감을 가지고 나아가고자<br>
+                합니다. 정기후원과 카페의 수입의 일부를 통하여, 사막에 나무 한그루를 심어<br>
+                푸른 지구를 회복하고자합니다. 여러분들의 관심과 사랑이 필요합니다.
+            </h5>
+        </div>
+        <div class="text0 left text2">
+            <h1>일회용품을 지양하는,</h1>
+            <h5>
+                우리나라의 플라스틱 폐기물 발생량은 매년 천만톤이 넘는다고 합니다.<br>
+               이러한 폐기물들이 다양한 경로를 통해 바다로 유입되는데<br>
+                포장재와 소비재용품 등 육지에서 기인한 것으로 보이는 플라스틱 쓰레기가<br>
+                60% 이상을 차지한다고 합니다. 우리의 일상속에서 조금의 노력을 감수한다면, <br>
+                이러한 심각한 문제를 해결해나갈 수 있다고 봅니다. SEE  U SOON카페는, 텀블러 이용시<br>
+                제품을 할인을 해주며 플라스틱을 지양하는 정신을 전하고자 합니다. 또한 카페의 모든 제조과정과<br>
+                서비스 과정가운데 불필요한 플라스틱 사용을 제한하여 환경보호헤 앞장서겠습니다. 
+            </h5>
+        </div>
+        <div class="photo right overflow">
+            <img src="images/plastic.png" alt="플라스틱사진">
+        </div>
+    </div>
+
+    <!--footer-->
+    <div id="footer">
+        <div class="footer_inner">
+            <ul class="text">
+                <li><a href="#">오시는 길</a></li>
+                <li><a href="#">제휴문의</a></li>
+                <li><a href="#">개인정보처리방침</a></li>
+                <li><a href="#">이용약관</a></li>
+                <li><a href="#">고객센터 1234-5678</a></li>
+            </ul>
+            <a href="#"><img src="images/mainlogo.png" alt="메인로고" class="mainlogo"></a>
+            <p>
+                부산광역시 보호동 1004-12 <span>WEB DESIGNER</span>박지원 <br>
+                Tel.051-123-4567 E-mail.n__mlki10@naver.com
+            </p>
+            <ul class="sns">
+                <ul>
+                    <li><a href="#"><img src="images/twitter.png" alt="트위터"></a></li>
+                    <li><a href="#"><img src="images/instar.png" alt="인스타">
+                    </a></li>
+                    <li><a href="#"><img src="images/youtube.png" alt="유튜브"></a></li>
+                    <li><a href="#"><img src="images/facebook.png" alt="페이스북"></a></li>
+                </ul>
+            </ul>
+        </div>
+    </div> 
+</body>
+</html>
